@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça o meu portifólio com alguns dos projetos e as linguagens que trabalhei.">
+    <!-- Link dos ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Portifólio Denis</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">DENIS BECK</h1>
+        <nav class="header__nav">
+            <a href="https://github.com/Denisbeckdev" target="_blank" class="header__link"><i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/denis-beck-312b0443/" target="_blank" class="header__link"><i class="fa-brands fa-linkedin"></i>
+            </a>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="about__box">
+            <h3 class="about__subtitle">Prazer em te conhecer!</h3>
+            <h2 class="about__title">Eu sou <span class="about__highlight"> Denis Beck</span></h2>
+            <p class="about__description">Morando em Joinville/SC, sou um desenvolvedor <br> front-end apaixonado por criar aplicativos web <br>
+                acessíveis
+                que os usuários adoram.</p>
+            <a href="#message" class="about__cta cta-contact">ENTRE EM CONTATO</a>
+        </div>
+        <img src="./assets/img/profile-denis-pb.jpeg" alt="Foto do Denis" class="about__image">
+    </section>
+    <hr>
+
+    <section class="languages">
+        <h2 class="languages__title"><span class="languages_highlight">Linguagens</span></h2>
+        <div class="languages__container">
+            <div class="languages__item">
+                    <i class="fa-brands fa-lg fa-html5 languages__icon"></i>
+                    <div class="languages__text">
+                        <h3 class="languages__name">HTML</h3>
+                        <p class="languages__level">Estudante</p>
+                    </div>
+            </div>
+            <div class="languages__item">
+                    <i class="fa-brands fa-lg fa-css3-alt languages__icon"></i>
+                    <div class="languages__text">
+                        <h3 class="languages__name">CSS</h3>
+                        <p class="languages__level">Estudante</p>
+                    </div>
+            </div>
+            <div class="languages__item">
+                    <i class="fa-brands fa-js languages__icon"></i>
+                    <div class="languages__text">
+                        <h3 class="languages__name">Javascript</h3>
+                        <p class="languages__level">Estudante</p>
+                    </div>  
+            </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="projects">
+            <h2 class="projects__title"><span class="projects__highlight">Projetos</span></h2>
+            <a href="#message" class="projects__cta cta-contact">ENTRE EM CONTATO</a>
+            <div class="projects__container">
+                <div class="projects_item">
+                    <img src="./assets/img/Blog.png" alt="Imagem do Blog" class="projects__image" width="250">
+                        <div class="projects__details">
+                            <h4 class="projects__name">Projeto Blog</h4>
+                            <span class="projects__tech">HTML</span>
+                            <span class="projects__tech">CSS</span>
+                            <span class="projects__tech">JavaScript</span>
+                        </div>
+                        <div class="projects__links">
+                            <a href="https://denisbeckdev.github.io/Blog/" class="projects__link cta-contact" target="_blank">VER PROJETO</a>
+                            <a href="https://github.com/Denisbeckdev/Blog" class="projects__link cta-contact" target="_blank">VER CÓDIGO</a>
+                        </div>
+                </div>
+                <div class="projects_item">
+                    <img src="./assets/img/Calculadora.png" alt="Imagem da Calculadora" class="projects__image" width="250">
+                    <div class="projects__details">
+                        <h4 class="projects__name">Projeto Calculadora</h4>
+                        <span class="projects__tech">HTML</span>
+                        <span class="projects__tech">CSS</span>
+                        <span class="projects__tech">JavaScript</span>
+                    </div>
+                    <div class="projects__links">
+                        <a href="https://denisbeckdev.github.io/Projeto_Calculadora/" class="projects__link" target="_blank">VER PROJETO</a>
+                        <a href="https://github.com/Denisbeckdev/Projeto_Calculadora" class="projects__link cta-contact" target="_blank">VER CÓDIGO</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section class="contact" id="message">
+            <div class="contact__container">
+                <div class="contact__details">
+                    <h2 class="contact__title"><span class="contact__highlight">CONTATO</span></h2>
+                    <p class="contact__description">Adoraria saber mais sobre o seu projeto e como posso <br> ajudar. Por favor, preencha o formulário, e
+                        retornarei o <br> contato o mais rápido possível.</p>
+                </div>
+                <form class="contact__form">
+                    <input type="text" required placeholder="Nome" class="contact__input" id="Nome" name="NOME"><br>
+                    <input type="email" required placeholder="E-mail" class="contact__input" id="E-mail" name="E-MAIL"><br>
+                    <input type="text" required placeholder="MENSAGEM" class="contact__input" ><br>
+                    <button type="submit" class="contact__submit cta-contact">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+    </section>
+    <hr>
+
+    <footer class="footer">
+        <h1 class="footer__title">DENIS BECK</h1>
+        <nav class="footer__nav">
+            <a href="https://github.com/Denisbeckdev" target="_blank" class="footer__link"><i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/denis-beck-312b0443/" target="_blank" class="footer__link"><i class="fa-brands fa-linkedin"></i>
+            </a>
+        </nav>
+        <div class="footer__credits">
+            Desenvolvido por <strong>Denis Beck</strong> <i class="fa-solid fa-computer" style="color: #da4966;"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
