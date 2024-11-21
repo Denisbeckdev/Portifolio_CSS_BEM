@@ -6,249 +6,273 @@
 
 body {
     background-color: #151515;
+    color: #ffffff;
+    font-family: 'young serif', sans-serif;
 }
-
-/* 
-font-family: 'Poppins', sans-serif;
-font-family: 'young serif', serif;
-*/
 
 html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
 .header {
-    color: #fff;
-    text-align: center;
-    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 5px 0;
+    gap: 20px;
+}
+
+.header__title {
     font-family: 'young serif', serif;
+    font-size: 28px;
 }
 
 .header__nav i {
-    color: #fcfcfc;
-    margin: 30px 20px;
+    font-size: 24px;
+    margin: 0 15px;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
+/* Seção "Sobre" */
 .about {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: 20px 0;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about__box {
+    max-width: 100%;
     text-align: center;
-    color: #fcfcfc;
-    font-family: 'Poppins', sans-serif;
-    padding: 0 20px;
 }
 
 .about__subtitle {
     font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .about__title {
-    font-size: 28px;
-    margin: 0 0 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.about__highlight,
-.languages__highlight,
-.projects__highlight,
-.contact__highlight,
-.cta-contact {
+.about__highlight {
+    color: #fff;
     border-bottom: 5px solid #5fdde5;
 }
 
 .about__description {
-    margin: 15px 0;
+    margin-bottom: 20px;
 }
 
-.cta-contact {
-    color: #ffffff;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 15px;
-}
-
-.cta-contact:hover {
-    color: #c6c6c6;
-    transform: scale(1.1);
-    transition: all 0.6s;
-}
-
-hr {
-    margin: 30px 5%;
-}
-
-.languages {
+.about__cta {
+    padding: 10px 20px;
+    background-color: transparent;
+    border-bottom: 5px solid #5fdde5;
     color: #fff;
+    font-weight: bold;
+}
+
+.about__image {
+    width: 70%;
+    height: auto;
+    order: -1;
+    margin: 0 0 20px;
+}
+
+/* Linha divisória */
+hr {
+    margin: 40px 0;
+    margin: 30px 5%;
+
+}
+
+/* Seção "Linguagens" */
+.languages {
     text-align: left;
+    margin: 40px 70px;
+
+}
+
+.languages__title {
+    display: inline-block;
+    justify-content: left;
+    font-size: 28px;
+    border-bottom: 5px solid #5fdde5;
+    margin-bottom: 20px;
 }
 
 .languages__container {
     display: flex;
-    justify-content: center;
-    align-items: start;
-    margin: 20px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.languages__item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
 }
 
 .languages__icon {
-    margin: 14px 10px;
-    text-align: left;
-}
-
-.languages__title {
     font-size: 28px;
-    text-transform: uppercase; 
-    margin: 0 5px 40px;
+    margin-right: 15px;
 }
 
 .languages__name {
-    font-size: 28px;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 
 .languages__level {
-    font-size: 20px;
-    margin: 8px 0;
-    color: #b2b2b2;
+    font-size: 16px;
+    color: #aaa;
 }
 
-.projects,
-.projects__links {
+/* Seção "Projetos" */
+.projects {
+    text-align: left;
+    margin: 40px 20px;
+}
+
+.projects__header {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 40px;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .projects__title {
-    color: #fff;
     font-size: 28px;
-    text-transform: uppercase; 
+    margin: 0;
+    display: inline-block;
+    border-bottom: 5px solid #5fdde5;
+}
+
+.projects__cta {
+    font-size: 15px;
+    padding: 5px 30px;
+    display: inline-block;
+    border-bottom: 5px solid #5fdde5;
+}
+
+.projects__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects_item {
+    padding: 20px;
+    text-align: left;
+    max-width: 300px;
 }
 
 .projects__image {
-    width: 90%;
-    height: auto;
-    margin: 0 20px;
-    order: 1;
-}
-
-.projects__details {
-    text-align: left;
-    margin: 20px 20px 40px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .projects__name {
-    color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .projects__tech {
-    color: #c5c5c5;
-    font-size: 20px;
-    margin-right: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
 }
 
+.projects__link {
+    display: inline-block;
+    margin: 10px 5px 0;
+    padding: 8px 15px;
+    color: #fff;
+    border-bottom: 5px solid #5fdde5;
+}
+
+/* Seção Contato */
 .contact {
+    display: inline-block;
     background-color: #444444;
     padding: 35px 20px 30%;
     text-align: center;
     color: #fff;
+
+}
+
+.contact__title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-bottom: 5px solid #5fdde5
 }
 
 .contact__description {
-    color: #acacac;
-    font-size: 16px;
-    margin: 0 0 20px;
+    color: #aaa;
+    margin-bottom: 30px;
 }
 
 .contact__input {
     width: 95%;
     padding: 10px;
-    background-color: transparent;
     border: none;
     border-bottom: 2px solid #fff;
-    margin: 10px;
-    color: #fff;  
+    background-color: transparent;
     font-size: 16px;
 }
 
-textarea:focus, input:focus, select:focus {
-    outline: none;
+.contact__form {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact__submit {
+    align-self: flex-end;
     background-color: transparent;
     border: none;
+    color: #fff;
     border-bottom: 5px solid #5fdde5;
-    float: right;
-    margin: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
+/* Rodapé */
 .footer {
     text-align: center;
-    padding: 20px 0 40px;
+    padding: 20px 0;
+    margin-bottom: 20px;
     color: #fff;
 }
 
-@media screen and (max-width: 375px) {
-    .contact__description {
-        font-size: 14px;
-        line-height: 1.5; 
-        padding: 10px; 
-    }
+.footer__nav {
+    margin: 10px;
 }
 
-@media screen and (max-width: 768px) {
-    .about__image {
-        width: 70%;
-        height: auto;
-        order: -1;
-        margin: 0 0 20px;
-    }
-
-    .about__box {
-        flex: 1;
-    }
-}
-
-@media screen and (min-width: 1020px) {
-    .header, .about, .languages, .projects, .contact__container {
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 25px;
-        align-items: center;
-    }
-
-    .header__nav {
-        z-index: 10;
-    }
-
-    .header__nav i {
-        font-size: 20px; 
-    }
-
-    .about {
-        justify-content: space-between;
-        flex-direction: row;
-        position: relative;
-    }
-
-    .about__box {
-        text-align: left;
-    }
-
-    .about__subtitle {
-        font-size: 40px;
-    }
-
-    .about__title {
-        font-size: 45px;
-    }
+.footer__credits {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #aaa;
 }
