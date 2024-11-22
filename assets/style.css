@@ -168,22 +168,23 @@ hr {
 
 .projects__cta {
     font-size: 15px;
+    font-weight: 600;
     display: inline-block;
     border-bottom: 5px solid #5fdde5;
+    padding: 15px;
 }
 
 .projects__container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .projects_item {
     padding: 20px;
     text-align: left;
-    max-width: 300px;
+
 }
 
 .projects__image {
@@ -205,20 +206,16 @@ hr {
 
 .projects__links {
     display: flex; 
-    gap: 10px; 
-    text-align: center;
-    justify-content: center; 
-    margin-top: 20px; 
-}
+    justify-content: space-between; 
+    align-items: center;
+} 
 
 .projects__link {
-    display: inline-block;
-    justify-content: center;
     margin: 10px 5px 0;
     padding: 8px 15px;
     color: #fff;
     border-bottom: 5px solid #5fdde5;
-}
+} 
 
 /* Seção Contato */
 .contact {
