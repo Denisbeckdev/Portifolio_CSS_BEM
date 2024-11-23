@@ -86,6 +86,15 @@ a {
     font-weight: bold;
 }
 
+.about__cta:hover,
+.projects__cta:hover,
+.projects__link:hover,
+.contact__submit {
+    color: #c6c6c6;
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
 .about__image {
     width: 70%;
     height: auto;
@@ -181,7 +190,7 @@ hr {
     margin: 0 auto;
 }
 
-.projects_item {
+.projects__item {
     padding: 20px;
     text-align: left;
 
@@ -242,9 +251,15 @@ hr {
     width: 95%;
     padding: 10px;
     border: none;
+    color: #fff;
     border-bottom: 2px solid #fff;
     background-color: transparent;
     font-size: 16px;
+}
+
+.contact__input:focus,
+.contact__submit:focus {
+    outline: none;
 }
 
 .contact__form {
@@ -263,6 +278,13 @@ hr {
     cursor: pointer;
 }
 
+.contact__form .contact__submit:hover {
+    color: #c6c6c6;
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+
 /* Rodapé */
 .footer {
     text-align: center;
@@ -279,6 +301,29 @@ hr {
     margin-top: 15px;
     font-size: 14px;
     color: #aaa;
+}
+
+@media screen and (max-width: 375px) {
+
+    .about__description,
+    .contact__description {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 70%;
+        height: auto;
+        order: -1;
+        margin: 0 0 20px;
+    }
+
+    .about__box {
+        flex: 1;
+    }
 }
 
 @media (min-width: 1020px) {
@@ -358,7 +403,7 @@ hr {
         justify-content: space-between;
     }
 
-    .projects_item {
+    .projects__item {
         flex: 1 1 45%;
         padding: 20px;
         text-align: center;
@@ -382,11 +427,13 @@ hr {
         align-items: center;
     }
 
-    .contact-container {
+    .contact__container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         padding: 50px 0;
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .contact {
@@ -396,25 +443,17 @@ hr {
     }
 
     .contact__form {
-        width: 40%; 
+        width: 40%;
         display: flex;
         flex-direction: column
     }
 
     .contact {
-        text-align: left; 
+        text-align: left;
         color: #fff;
         padding: 35px 20px;
-        flex: 1; 
+        flex: 1;
     }
-
-    .contact__container {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        gap: 20px;
-        flex-wrap: wrap;
-    }    
 
     .contact__title {
         font-size: 32px;
@@ -423,25 +462,26 @@ hr {
 
     .contact__description {
         font-size: 16px;
-        line-height: 1.6;
+        line-height: 1.8;
         color: #acacac;
         margin-bottom: 30px;
     }
 
-    .contact__input, .contact__submit {
-        width: 100%; 
+    .contact__input,
+    .contact__submit {
+        width: 100%;
     }
 
     .contact__submit {
         align-self: flex-end;
         width: auto;
-        display: inline-block; 
+        display: inline-block;
     }
 
     .footer {
         display: flex;
         justify-content: space-around;
-    
+
     }
 
 }
